@@ -1,5 +1,5 @@
 ---
-title: "Field Extraction of Volatiles"
+title: "Field Extraction of Volatiles with Solid Phase Microextraction (SPME)"
 author: "Austin N. Fife"
 output: html_document
 ---
@@ -8,6 +8,25 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-# test
+### Safety Risks:
+The air pumps make a loud noise and lithium ion batteries require care when handling. Roses have sharp prickles, wear gloves to protect from scratches. Hearing protection is recommended. There may be a risk of electric shock in rainy conditions. Wear appropiate protection from the sun: sunscreen and water are recommended.
+
+### Equipment:
+
+Clean air system:
+ - 3 high volume air inflators (24v, 25 CFM)  w/ nozzle attachments
+ - 6-8 lithium ion (24v, 4.0 Ah) power tool batteries (charged)
+ - 2 variable flow meters with PTFE tubing
+ - 2 In line Hepa Sanitary Air Filters for 1/4 in tubing (attached to flow meter)
+ - 2 inline water filter carbon blocks, one micron filtration
+
+Headspace volatile collection equipment:
+ - Oven Bags - One per sample + Backups (precooked in oven at 50 C for 25 hours or more)
+ - Zip ties - 6 + per sample, bring a large number
+ - Heavy duty shears (for cutting zipties and holes in the bags)
+
+#### Notes:
+The air pumps will overheat in direct sunlight, especially when ambient temperatures are over 32 C (90 F). To prevent damaging the equipment, try to keep inflators insulated from heat, and in the shade if possible. Take care to avoid obstructing the intake vents. When the air pumps overheat, it melts the internal fans and creates a situation where the motor melts through the internal wiring, completing circuit and preventing the power switch from functioning while the battery is still attached. If you are not able to turn off the air pump with the toggle switch (without removing the battery), then **the air pumps are permanently damaged, and should be replaced immediately.** Also, you will need to remove any particulates of melted fan matter from the carbon block filters (just shake it out).
+
 
 *last modified: `r format(Sys.time(), '%d&period; %B %Y')`*

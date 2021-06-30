@@ -1,0 +1,75 @@
+---
+output: word_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# Protocol for collecting mites on roses {#mite_survey}
+
+**Collecting materials**
+
+- 50 ml centrifuge tubes filled with 15 ml of 95% ethanol
+
+- GPS (with camera)
+
+- Rose pruners
+
+- Permanent marker
+
+- datasheet
+
+- pen/pencil
+
+- clipboard
+
+- Spray bottle with 70% ethanol
+
+- A short description of the project's goals and business cards to help answer people's questions
+
+
+**Taking a sample**
+
+- Photograph the rose
+
+- Record GPS coordinates and fill out datasheet
+
+- Take a flower cutting large enough to fill the centrifuge tubes provided (about ~10 cm) and place the flower petal side down in the tube so the entire flower is submerged in alcohol over the sepals. Make sure the lid is tight, then shake the tube vigorously for a few seconds to help dislodge any mites. Make sure that no alcohol gets on the exterior of the tubes and dissolves labels, otherwise the labels should be rewritten. These tubes should be stored vertically so that the flower and sepals remain submerged in the alcohol. These tubes can be kept at room temperature until we have time to process them.
+
+- Spray pruners with ethanol to avoid cross contaminating roses
+
+**Materials for sample processing**
+
+- Labelled sample tube with rose in ethanol
+- 95% Ethanol in wash bottle
+- No. 500 Sieve
+- No. 270 Sieve
+- No. 80 Sieve
+
+**Sample processing**
+
+The mite washing solution should have knocked the mites off the rose plant. Now we need to separate the mites from the plant materials so we can count and identify them. We will do this by straining the mites through a stack of fine sieves
+
+- Stack the sieves from largest mesh to smallest (No. 500 on bottom, No. 270, then No. 80 on top)
+- Take your centrifuge tube and pour out the ethanol through the sieves
+- Rinse the plant tissue thoroughly with the ethanol from the wash bottle over the sieves
+- Discard the rinsed plant material into a designated sanitation container
+
+The smallest mesh (No. 500, at the bottom of the stack) should have the mites we want. The largest mesh should have  just have plant materials on it. We want to rinse the stuck mites into containers where we can count and identify them
+
+- Take the smallest sieve (No. 500) and hold it at an angle while washing in a zig zag pattern from top to bottom so the debris will flow to the bottom side of the sieve. You should also gently spray the backside of the mesh in the same way, starting from the highest edge and working down to the bottom edge.
+- Once the debris have all been gathered at the edge of the sieve, put the centrifuge tube underneath the sieve and rinse the debris into the tube with the wash bottle. Be sure to rinse off the sides of the sieve as well.
+
+- Relabel the tube if necessary.
+
+- Always backwash the sieves with running tap water before using them againg to avoid clogging and contamination.
+
+```{r}
+knitr::include_graphics('rose_proto.png')
+knitr::include_graphics('tube_rack.png')
+```
+
+If there are any questions, comments, data loss or problems, please call or email Austin Fife (afife\@ufl.edu, 208-874-2283) or Dr. Xavier Martini (xmartini\@ufl.edu, 850-875-7160) as soon as possible.
+
+*last modified: `r format(Sys.time(), '%d&period; %B %Y')`*

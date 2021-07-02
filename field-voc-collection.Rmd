@@ -99,7 +99,7 @@ Herbivorous mites tend to be found on the tender plant tissues found on actively
  1. Cut off the opposite corner of the bag, take the Drummond aspirator and a clean 5 ul glass micropipette to add 1 ul of Nonyl Acetate to the bag. 
  1. Leave the glass micropipette in the bag, insert the back end of the inline filter into the oven bag and seal it with a zip tie as well. **Please check the airflow arrow to make sure air is going out of the bag**
  1. Use the burette holder to clamp the manual SPME holder into position, then guide the septum piercing needle to puncture the bag so that the needle remains inside of the bagged air without coming into contact with the rose itself
- 1. Expose the SPME fiber by depressing the plunger and sliding it forward along the Z-slot until it stays cocked
+ 1. Expose the SPME fiber by depressing the plunger and sliding it forward along the Z-slot so it stays cocked
  1. Start the clean air system by turning on the air inflators and setting the airflow to 2.0. You may need to turn the variable airflow meter over so it reads correctly
  1. Leave the SPME fiber exposed to the headspace VOCs inside of the bag for 20 minutes
  1. Withdraw the SPME fiber by sliding the plunger backwards along the Z-slot
@@ -114,7 +114,7 @@ grid::grid.raster(tiff::readTIFF('rrd_field_trial_map_2021.tif'))
 ```
 
 
-# Notes and Figures:
+# Figures and Notes:
 
 ##### Assembled Field Extractor:
 ```{r, fig.height= 8, fig.width= 10, warning = FALSE}
@@ -128,7 +128,7 @@ knitr::include_graphics('spme_field_extractor.jpg')
 knitr::include_graphics('spme_burette_holder.jpg')
 ```
 
-`r fig_nums(name = "spme_burette_holder", caption = "The burette holder can be adjusted to different heights to accommadate the SPME holder in a variety of positions. Note the placement of the hoses and the blue inline filter.")`
+`r fig_nums(name = "spme_burette_holder", caption = "The burette holder can be adjusted to different heights to accommodate the SPME holder in a variety of positions. Note the placement of the hoses and the blue inline filter.")`
 
 ##### Components of SPME holder:
 ```{r, fig.height= 8, fig.width= 10, warning = FALSE}

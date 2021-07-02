@@ -19,10 +19,24 @@ fig_nums <- captioner::captioner()
 ### Safety Risks: Minimal
 The air pumps make a loud noise and lithium ion batteries require care when handling. Roses have sharp prickles, wear gloves to protect from scratches. Hearing protection is recommended. There may be a risk of electric shock in rainy conditions. Wear appropriate protection from the sun: sunscreen and water are recommended.
 
-### Equipment:
+### Explanation of rationale behind experimental design:
+For this experiment, we will be collecting headspace volatiles with Solid Phase Microextraction (SPME), a method which adsorbs the volatile organic compounds (VOCs) surrounding part of a plant to the SPME fiber. The adsorbed chemicals can then be desorbed with paired Gas Chromatography - Mass Spectrometery (GC-MS) equipment to identify the collected chemistry. SPME extraction is a flexible method which can collect the VOCs from just about anything you can get an container around. For our experiments, we rely on heat-treated oven bags, which are relatively chemically inert after cooking them in an oven at 50°C for a day or so. 
+
+The purpose of these experiments is to collect the volatiles emanating from roses under various conditions, including: 
+
+ - roses infested with eriophyid mites (plots: 5, 9, 24, 18)
+ - roses treated with Acibenzolar-S-methyl (ASM, Actigard) (plots: 1, 6, 22, 17)
+ - roses afflicted with Rose Rosette Disease (already sampled in Athens, GA)
+
+####  Goal of study:
+By sampling rose VOCs with SPME under these different conditions, we hope to find quantitative and/or qualitative differences in VOC compounds between rose treatments.
+
+#### Hypotheses:
+Our hypothesis formed from preliminary research where we observed that *A. swirskii* were preferentially attracted the RRD-infected roses. We think this might be due to differences in the VOCs released from uninfected vs. infected roses. Collecting and comparing chemistry between different roses should allow us to see any qualitative and/or quantitative differences in VOCs released between these groups. This data will give us insight into some of the metabolic changes which may have occurred between different rose groups. Furthermore, our data should indicate which chemicals are worth testing for attractiveness to *A. swirskii* in olfactometer trials, which can give us insight into which specific VOCs *A. swirskii* may have been responding to from the RRD-infected roses.
+
+### Materials:
 
 ##### Clean air system:
-
  - 3 high volume air inflators (24v, 25 CFM)  w/ nozzle attachments
  - 6-8 lithium ion (24v, 4.0 Ah) power tool batteries (charged)
  - 2 variable flow meters with PTFE tubing
@@ -30,26 +44,28 @@ The air pumps make a loud noise and lithium ion batteries require care when hand
  - 2 inline water filter carbon blocks, one micron filtration
 
 ##### Headspace volatile collection equipment:
-
- - GoBeGreen Original Garden Bags - Nylon - One per sample + Backups (precooked in oven at 50 C for 25 hours or more)
+ - GoBeGreen Original Garden Bags - Nylon - One per sample + Backups (precooked in oven at 50°C for 24 hours or more)
  - Zip ties - 6 + per each sample, bring a large number
  - Heavy duty shears (for cutting zip ties and holes in the bags)
  - Bypass pruners (optional, for removing dead canes, allowing better access to rose flowers)
  - Blue mini inline filters (for outflow)
 
 ##### Solid Phase Microextraction (SMPE)
-
  - Manual SPME holder
- - SPME fiber (Gray Fiber) - Divinylbenzene/Carboxen/Polydimethylsiloxane (DVB/CAR/PDMS)
+ - SPME fiber (Gray Fiber) - 24 Ga Divinylbenzene/Carboxen/Polydimethylsiloxane (DVB/CAR/PDMS)
  - 2 Double Burette clamps
  - 2 Aluminum Rod (3 ft, 1/4 in)
  
 ##### Eqiupment for Internal Standard:
-
  - Nonyl acetate (keep cool)
  - 1 Drummond Scientific Aspirator, Captrol III
  - 5 ul glass calibrated micropipettes
 
+
+### Methods:
+To begin, select a cluster of flowers from a single rose cane, and gently cover it with an oven bag. Seal the end of the oven bag over the base of the rose cane with a zip tie so that the air is trapped around the 
+
+<!-- ASM/Actigard is an analogue of Methyl Salicylate (MeSA), a chemical which activates Systemic Acquired Resistance (SAR), part of a plant's immune response to pathogen attack. -->
 
 ### Experimental Site:
 
@@ -57,16 +73,6 @@ The air pumps make a loud noise and lithium ion batteries require care when hand
 grid::grid.raster(tiff::readTIFF('rrd_field_trial_map_2021.tif'))
 ```
 
-### Sample Selection:
-For this experiment, we will be collecting headspace volatiles with Solid Phase Microextraction (SPME), a method which adsorbs the volatile organic compounds (VOCs) surrounding part of a plant. It is a flexible method which can collect the VOCs from just about anything you can get an oven bag around. We want to collect the volatiles emanating from roses with various treatments, including: 
-
- - roses infested with eriophyid mites (plots: 5, 9, 24, 18)
- - roses treated with Acibenzolar-S-methyl (ASM, Actigard) (plots: 1, 6, 22, 17)
- - roses afflicted with Rose Rosette Disease (already sampled in Athens, GA)
-
-To begin, select a cluster of flowers from a single rose cane, and gently cover it with an oven bag. Seal the end of the oven bag over the base of the rose cane with a zip tie so that the air is trapped around the 
-
-<!-- ASM/Actigard is an analogue of Methyl Salicylate (MeSA), a chemical which activates Systemic Acquired Resistance (SAR), part of a plant's immune response to pathogen attack. -->
 
 # Notes and Figures:
 
@@ -93,7 +99,7 @@ knitr::include_graphics('spme_labeled_2.jpg')
 ```{r, fig.height= 8, fig.width= 10, , warning = FALSE}
 knitr::include_graphics('spme_melted.jpg')
 ```
-`r fig_nums(name = "spme_melted", caption = "The air pumps will overheat in direct sunlight, especially when ambient temperatures are over 32 C (90 F). To prevent damaging the equipment, try to keep inflators insulated from heat, and in the shade if possible. Take care to avoid obstructing the intake vents. When the air pumps overheat, it melts the internal fans and creates a situation where the motor melts through the internal wiring, completing circuit and preventing the power switch from functioning while the battery is still attached. If you are not able to turn off the air pump with the toggle switch (without removing the battery), then **the air pumps are permanently damaged, and should be replaced immediately.** Also, you will need to remove any particulates of melted fan matter from the carbon block filters (just shake it out).")`
+`r fig_nums(name = "spme_melted", caption = "The air pumps will overheat in direct sunlight, especially when ambient temperatures are over 32°C (90°F). To prevent damaging the equipment, try to keep inflators insulated from heat, and in the shade if possible. Take care to avoid obstructing the intake vents. When the air pumps overheat, it melts the internal fans and creates a situation where the motor melts through the internal wiring, completing circuit and preventing the power switch from functioning while the battery is still attached. If you are not able to turn off the air pump with the toggle switch (without removing the battery), then **the air pumps are permanently damaged, and should be replaced immediately.** Also, you will need to remove any particulates of melted fan matter from the carbon block filters (just shake it out).")`
 
 
 *last modified: `r format(Sys.time(), '%d %B %Y')`*

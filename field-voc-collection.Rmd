@@ -2,7 +2,8 @@
 title: "Field Extraction of Volatiles with Solid Phase Microextraction (SPME)"
 author: "Austin N. Fife"
 output: 
- - html_document
+ - word_document
+ # - html_document
  # - pdf_document
 ---
 

@@ -1,0 +1,96 @@
+---
+title: "Two-arm olfactometer assays"
+author: "Austin N Fife"
+date: "May 3, 2019"
+output: word_document
+bibliography: 'thesis.bib'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(tidyverse,readxl)
+```
+# Predatory mite protocols for 2-arm (Y-tube) and 4-arm olfactometer assays
+The purpose of these assays is to determine what chemicals from RRV-infected roses are attractive to these predatory mites
+
+## Materials needed
+  - Y-tube
+  - ring stand and clamp
+  - airflow system
+  - tubing
+  - timer
+  - paintbrush
+  - predatory mites
+  - black cardboard
+  - flagging tape
+  - datasheet
+  
+  for chemical testing:
+  
+  - dental wicks cut into 3 cm sections
+  - aluminium foil
+  - dichloromethane (solvent)
+  - test volatile (experimental chemical)
+  - Drummond capillary pipetter
+  - calibrated capillary micropipettes
+  
+  for rose experiments:
+  
+  - zipties
+  - oven bags
+  - one or two roses  
+
+## Preparation
+All equipment must stay very clean for these experiments, any contamination could create inaccurate results.
+We keep our equipment clean by washing all glassware and the olfactometer first with water, then with sparkleen and finally with acetone. We then put all of our equipment into the oven and bake it at 50 °C overnight before we use the equipment again.
+
+## Olfactometer assembly
+```{r, out.width = "50%"}
+knitr::include_graphics("olfactometer_design.png")
+```
+
+## Starting up the airflow
+Begin by opening the valve in the lab bench so that air is flowing into the air and vaccuum pumps. You should hear a hiss of air when you do this. Afterwards, go to the front of the air pump/vaccuum and flip the switch labeled 'source air' so that the air can flow through the lines to our y-tube.
+
+## Airflow setup for chemical testing
+We take the two air lines running from the water bubbling flasks and attach those hoses to the the experiment and the control flasks in the cage. We then connect the flasks in the cage with the hoses which will be connected to the y-tube.
+Flag the line running to the flask with the experimental chemical in it so you can tell which arm is which. Once both arms are connected to their flasks, set the air pressure to a 0.3 flow rate for both lines so the pressure is equal.
+
+**All chemicals should be kept in the vent hood and only handled with gloves, eye protection, a lab coat and whatever other personal protection equipment required for the chemicals in question. Look up the MSDS and chemical labels to be sure the correct safety precautions are followed.**
+
+To begin testing a compound, add 100 ul of the control solvent (usually dichloromethane) with the capillary micropipetter to a dental wick and put the wick in the flask labelled 'control'. Then add 100 ul of the experimental chemical to another dental wick and put it in the flask labelled 'experiment'. Double check to make sure that the air lines are correctly flagged.
+
+## Airflow setup for plant testing
+This is similar to the methods used for volatile extraction. We place an oven bag over a clean section of the rose plant and insert an air line which is pushing air. We then ziptie the base shut with the tube inside so the bag begins to inflate. If inflation is good, we cut the edge off of the oven bag, insert the air line which connects to the Y-tube and ziptie it so no air escapes except into the olfactometer arm. Do this for each rose and flag the line with the experiment rose so you can tell which arm is which. Once both arms are connected to a rose, set the air pressure to a 0.3 flow rate for both lines so the pressure is equal.
+
+
+## Mite handling
+Mites are very small and delicate, so they require cautious handling to avoid injuring or losing them. To move mites from the colony, use a paintbrush with most of its hairs removed. You can use the fine haris of the paintbrush to pick up mites and gently introduce them to the olfactometer. To make mite observation easier, put down black cardboard underneath the Y-tube to enhance contrast.
+
+## Recording
+In the two-arm (Y-tube) olfactometer assays, the mites are offered a choice between walking towards the arm with air from an test chemical or a solvent control. Each assay lasts for up to 5 minutes, while recording the time it takes for a the mite to walk to the middle of one of the arms. The mites also may do nothing for 5 minutes, or run in circles without going anywhere.
+
+We will be recording the following behaviors:
+
+- Record the date of each test and the outcomes of the tests using a pen in the lab notebook provided.
+- If the mite did nothing or ran around without choosing an arm, put a check under 'no_response' and put 300 seconds under 'time_elapsed_sec'
+- If the mite went to the arm with test chemical, write 'experiment' and record the time it took to make that choice in seconds under 'time_elapsed_sec'
+- If the mite went to the arm with the control solvent, write 'control' and record the time it took to make that choice in seconds under 'time_elapsed_sec'
+- If the mite didn't go to either arm within the time limit, write 'no choice' and write 300 sec.
+- When recording plants, we also record the number on the plant stake under 'plant_number'
+
+After every five (5) mites, switch the experimental and control lines to avoid any side bias.
+
+After every ten (10) mites, switch the Y-tube for a clean one and get new dental wicks if testing a chemical.
+
+We need to test forty (40) mites for each treatment level for these assays.
+
+
+The datasheet for recording is in the shared folder and is called 'yourname_pred_mite_olfactometer.xlsx':
+```{r}
+pmite<-readxl::read_excel('pred_mite_olfactometer.xlsx')
+knitr::kable(head(pmite))
+```
+
+# References:
+@citation
